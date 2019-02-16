@@ -351,4 +351,11 @@ color: grey;
     margin-top: 20px;
     width: 960px;
   }
+
+  #wordGuess, #rpg, #gif, #trivia, #rps{
+    display:block;
+    height:100px;
+    text-indent:-9999px;
+    width:460px;
+  }
   

@@ -1,345 +1,372 @@
-html, body {
-  height: 100%;
-  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+html {
+
+margin: 0;
+
+padding: 0;
+
 }
 
-#name {
-  width: 35%;
-  height: 100%;
-  background: #4aaaa5;
-  color: #ffffff;
-  float: left;
-  text-align: center;
-  font-size: 2em;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* border: 2px solid red; */
-}
+body {
 
-/* overriding Bootstrap background color */
-#navbar {
-  height: 75px;
-  padding: 0px;
-  background-color: #ffffff;
-  /* border: 2px solid blue; */
-}
+font-family: 'Handlee', cursive;
 
-#container{
-  padding-bottom: 0px;
-}
+font-size: 13pt;
 
-.nav{
-  width: 960px;
-  /* border: 2px solid green; */
-  height: 100%;
-}
+background-color: #efefef;
 
-#links a{
-  color: #777777;
-  text-align: center;
-  padding: 0px 16px 25px 13px;
-  text-decoration: none;
-  font-size: 17px;
-  height: 18px;
-}
+padding: 10px;
 
-/* .collapse .show {
-  display: block;
-} */
+margin: 0;
 
-.show {
-  background: #ffffff;
-  color: #777777;
-  display: block;
-}
-
-.navbar-collapse {
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-#portLink {
-  border-left: 1px solid #cccccc;
-  border-right: 1px solid #cccccc;
 }
 
 h1 {
-  color: #4aaaa5;
-  padding-bottom: 2%;
-  padding-top: 3%;
-  margin-left: 10px;
-  border-bottom: 2px solid #dddddd;
-  width: 95%;
-  font-family: 'Georgia', Times, "Times New Roman", serif;
+
+font-size: 15pt;
+
+color: #20bcd5;
+
+text-align: center;
+
+padding: 18px 0 18px 0;
+
+margin: 0 0 10px 0;
+
 }
 
-img {
-  height: 200px;
-  width: 200px;
-  float: left;
-  margin-top: 10px;
-  margin-right: 20px;
-}
+h1 span {
 
-.row {
-  height: 180px;
-  widows: 185px;
-  color: white;
-  padding: 15px;
+/* border: 4px dashed #20bcd5; */
+
+padding: 10px;
+
 }
 
 p {
-  width: 90%;
-  margin-top: 15px;
-  margin-right: 0px;
-  padding-left: 2%;
+
+padding: 0;
+
+margin: 0;
+
 }
 
-.col-md-3 {
-  /* height: 100%!important; */
-  margin-right: 35px;
-  padding: 0px;
-  background-repeat: no-repeat;
+.img-circle {
+
+border: 3px solid white;
+
+border-radius: 50%;
+
 }
 
-.label {
-  width: 100%;
-  background-color: #4aaaa5;
-  color:#ffffff;
-  position: absolute;
-  bottom: 10px;
-  padding: 20px;
+.section {
+
+background-color: #fff;
+
+padding: 15px;
+
+margin-bottom: 10px;
+
+border-radius: 10px;
+
 }
 
-.container {
-  padding-bottom: 20px;
+#header {
+
+background-image: url("https://www.sololearn.com/Uploads/header.jpg");
+
+background-size: cover;
+
 }
 
-/* #portfolioContainer, #aboutContainer, #contactContainer {
-  margin: 0 auto;
-  width: 960px;
+#header img {
+
+display: block;
+
+width: 80px;
+
+height: 80px;
+
+margin: auto;
+
+}
+
+#header p {
+
+font-size: 25pt;
+
+color: #3b464c;
+
+padding-top: 5px;
+
+margin: 0;
+
+font-weight: bold;
+
+text-align: center;
+
+}
+
+.quote {
+
+font-size: 12pt;
+
+text-align: right;
+
+margin-top: 10px;
+
+}
+
+li {
+
+margin-bottom: 15px;
+
+font-weight: bold;
+
+}
+
+progress {
+
+width: 70%;
+
+height: 20px;
+
+color: #3fb6b2;
+
+background: #efefef;
+
+}
+
+progress::-webkit-progress-bar {
+
+background: #efefef;
+
+}
+
+progress::-webkit-progress-value {
+
+background: #3fb6b2;
+
+} 
+
+progress::-moz-progress-bar {
+
+color: #3fb6b2;
+
+background: #efefef;
+
+}
+
+/* .container{
+    height: 20px;
 } */
 
-#portfolio, #about, #contact {
-  background-color: #ffffff;
-  padding-left: 30px;
-  padding-bottom: 20px;
-}
-
-input[type=text], select, textarea {
-  width: 93%;
-  padding: 12px;
-  margin-top: 6px;
-  margin-bottom: 16px;
-}
-
-input[type=submit] {
-  background: #4aaaa5;
-  color: #ffffff;
-  padding: 12px 20px;
-  border: none;
-}
-
-.about, .contact, .portfolio {
-  margin-top: 20px;
-  background: #ffffff;
-  width: 960px;
-}
-
-body {
-  background-image: url(../images/circuit/circuit/circuit.png);
-  height: 100%;
-  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-#blue {
-  position: fixed;
-  bottom: 56px;
-  width: 100vw;
-  margin-left: -5vw;
-  height: 5px;
-  background: #4aaaa5;
-}
-
-#footer {
-  text-align: center;
-  background-color: #666666;
-  color:  #ffffff;
-  border-top: 5px solid #4aaaa5;
-}
-
-#footer p {  
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-  /* #profile {
-  height: 132px;
-  width: 175px;
-  float: left;
-  padding: 5px;
-  padding-right: 10px;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url(../images/circuit/circuit/circuit.png);
-  height: 100%;
-  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  }
-  
-.topnav {
-  width: 100%;
-  height: 90px;
-  padding-left: 2.5%;
-}
-
-#navContainer {
-  width: 100%;
-  background-color:#ffffff;
-  display: flex;
-}
-
-#nav {
-  margin-left: 65.5%;
-  margin-top: 2%;
-  }
-
-#portLink {
-  border-left: 1px solid #cccccc;
-  border-right: 1px solid #cccccc;
-}
-
-#name {
-  width: 20%;
-  height: 75%;
-  background: #4aaaa5;
-  color: #ffffff;
-  float: left;
-  text-align: center;
-  margin-left: 15%;
-  margin-top: 18px;
-  font-size: 2em;
-  display: block;
-  font-size: 2em;
-  font-weight: bold;
-  padding-top: 5px;
-}
-
-#namespace {
-  padding-top: 10px;
-}
-
-.topnav a {
-  color: #777777;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  height: 100%;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  background: #666666;
-  height: 70px;
-  margin-top: 5%;
-  color:  #ffffff;
-}
-
-footer p {
-  margin-top: 2.8%;
-  margin-bottom: 0;
-  font-size: .8em;
-}
-
-#blue {
-  position: fixed;
-  bottom: 70px;
-  width: 100%;
-  height: 5px;
-  background: #4aaaa5;
-}
-
-#portfolioContainer, #aboutContainer, #contactContainer {
-  margin: 0 auto;
-  width: 960px;
-}
-
-#portfolio h1, #about h1, #contact h1 {
-  color: #4aaaa5;
-  padding-bottom: 2%;
-  padding-top: 3%;
-  margin-left: 10px;
-  border-bottom: 2px solid #dddddd;
-  width: 95%;
-  font-family: 'Georgia', Times, "Times New Roman", serif;
-}
-
-#portfolio, #about, #contact {
-  background-color: #ffffff;
-  height: 100%;
-  width: 930px;
-  margin-top: 40px;
-  padding-left: 30px;
-  padding-bottom: 20px;
-}
-
-#portfolioContainer {
-  padding-bottom: 10%;
-}
-
-#contact {
-  width: 930px;
-}
-
-.card {
-  height: 180px;
-  width: 225px;
-  margin: 10px;
-  display: inline-block;
-  position: relative;
-}
-
 .label {
-  width:185px;
-  background-color: #4aaaa5;
-  color:#ffffff;
-  position: absolute;
-  bottom:10px;
-  padding: 20px;
-}
-
-input[type=text], select, textarea {
-  width: 93%;
-  padding: 12px;
-  margin-top: 6px;
-  margin-bottom: 16px;
-}
-
-input[type=submit] {
-  background: #4aaaa5;
-  color: #ffffff;
-  padding: 12px 20px;
-  border: none;
-}
-
-label {
-  color: #777777;
-}
+    width: 100%;
+    background-color: #4aaaa5;
+    color:#ffffff;
+    /* position: absolute; */
+    bottom: 10px;
+    padding: 20px;
+  }
 
 form {
-  padding-left: 1%;
-} */
+
+text-align: center;
+
+margin-top: 0;
+
+}
+
+.submit {
+
+background-color: #3fb6b2;
+
+padding: 12px 45px;
+
+border-radius: 5px;
+
+cursor: pointer;
+
+color: #ffffff;
+
+border: none;
+
+outline: none;
+
+margin: 0;
+
+font-weight: bold;
+
+}
+
+.submit:hover {
+
+background-color: #43a09d;
+
+}
+
+textarea {
+
+height: 100px;
+
+}
+
+input, textarea {
+
+margin-bottom: 10px;
+
+font-size: 11pt;
+
+padding: 15px 10px 10px;
+
+border: 1px solid #cecece;
+
+background-color: #efefef;
+
+color: #787575;
+
+border-radius: 5px;
+
+width: 70%;
+
+outline: none;
+
+}
+
+#contacts img {
+
+height: 50px;
+
+width: 50px;
+
+margin-left: 7px;
+
+margin-right: 7px;
+
+}
+
+#contacts a {
+
+text-decoration: none;
+
+}
+
+#contacts img:hover {
+
+opacity: 0.8;
+
+}
+
+#contacts {
+
+text-align: center;
+
+}
+
+.copyright {
+
+font-size: 8pt;
+
+text-align: right;
+
+padding-bottom: 10px;
+
+color: grey;
+
+}
+
+#linkedIn, #gitHub, #resume{
+    font-size: 48px;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  
+  #container{
+    padding-bottom: 0px;
+  }
+  
+  .nav{
+    width: 960px;
+    /* border: 2px solid green; */
+    height: 100%;
+  }
+  
+  /* #links a{
+    color: #777777;
+    text-align: center;
+    padding: 0px 16px 25px 13px;
+    text-decoration: none;
+    font-size: 17px;
+    height: 18px;
+  } */
+  
+  /* .collapse .show {
+    display: block;
+  } */
+  
+  /* #portLink {
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+  } */
+  
+  /* h1 {
+    padding-bottom: 2%;
+    padding-top: 3%;
+    margin-left: 10px;
+    border-bottom: 2px solid #dddddd;
+    width: 95%;
+    font-family: 'Georgia', Times, "Times New Roman", serif;
+  } */
+  
+  img {
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  
+  .row {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    /* color: white; */
+    padding: 15px;
+  }
+  
+  p {
+    width: 90%;
+    margin-top: 15px;
+    margin-right: 0px;
+    padding-left: 2%;
+  }
+  
+  .col-md-3 {
+    margin-right: 35px;
+    padding: 0px;
+    background-repeat: no-repeat;
+  }
+  
+  .label {
+    width: 100%;
+    /* color:#ffffff; */
+    position: absolute;
+    bottom: 10px;
+    padding: 20px;
+  }
+  
+  .container {
+    padding-bottom: 20px;
+  }
+  
+  .portfolio {
+    margin-top: 20px;
+    /* background: #ffffff; */
+    width: 960px;
+  }
+  

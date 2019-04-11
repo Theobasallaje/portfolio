@@ -109,7 +109,7 @@ $(".link-home").on('click', function(event){
     submitHandler: function(form) {
       $.ajax({
         type: "POST",
-        url: "php/contact-form.php",
+        url: "send",
         data: {
           "name": $("#contactForm #name").val(),
           "email": $("#contactForm #email").val(),

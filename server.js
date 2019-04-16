@@ -1,5 +1,6 @@
 var express = require('express');
 var nodemailer = require('nodemailer');
+var bodyParser = require('body-parser');
 
 var app = express();
 
@@ -26,16 +27,22 @@ async function sendMail(name, email, subject, message){
     // Only needed if you don't have a real mail account for testing
     let testAccount = await nodemailer.createTestAccount();
   
-    // create reusable transporter object using the default SMTP transport
+    // // create reusable transporter object using the default SMTP transport
+    // let transporter = nodemailer.createTransport({
+    //   host: "smtp.ethereal.email",
+    //   port: 587,
+    //   secure: false, // true for 465, false for other ports
+    //   auth: {
+    //     user: testAccount.user, // generated ethereal user
+    //     pass: testAccount.pass // generated ethereal password
+    //   }
+    // });
+
     let transporter = nodemailer.createTransport({
-      host: "smtp.ethereal.email",
-      port: 587,
-      secure: false, // true for 465, false for other ports
-      auth: {
-        user: testAccount.user, // generated ethereal user
-        pass: testAccount.pass // generated ethereal password
-      }
-    });
+      sendmail: true,
+      newline: 'unix',
+      path: '/usr/sbin/sendmail'
+  });
   
     // send mail with defined transport object
     let info = await transporter.sendMail({
@@ -54,6 +61,9 @@ async function sendMail(name, email, subject, message){
     // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
   }
 
+
+app.use(bodyParser.json()); // support json encoded bodies
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {

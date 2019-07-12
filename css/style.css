@@ -688,6 +688,8 @@ background-size: 200% auto;
 	.content .side-menu{
 		width: 100%;
 		height: auto;
+		text-align: -webkit-center;
+		text-align: center;
 	}
 	.content .main-profile{
 		width: 100%;
